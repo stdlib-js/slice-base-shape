@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-shape",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Compute the shape of a normalized multi-slice.",
   "license": "Apache-2.0",
   "author": {
