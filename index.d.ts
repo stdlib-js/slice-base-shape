@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,25 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var sliceLength = require( '@stdlib/slice-base-length' );
-
-
-// MAIN //
+import { MultiSlice } from '@stdlib/types/slice';
 
 /**
 * Returns the shape of a normalized multi-slice.
 *
-* @param {MultiSlice} slice - normalized MultiSlice object
-* @returns {NonNegativeIntegerArray} slice shape
+* @param slice - input multi-slice
+* @returns slice shape
 *
 * @example
-* var Slice = require( '@stdlib/slice-ctor' );
-* var MultiSlice = require( '@stdlib/slice-multi' );
-* var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
+* var Slice = require( `@stdlib/slice/ctor` );
+* var MultiSlice = require( `@stdlib/slice/multi` );
+* var normalizeMultiSlice = require( `@stdlib/slice/base/normalize-multi-slice` );
 *
 * var s = new MultiSlice( new Slice( 2, null, 1 ), null, 10 );
 *
@@ -48,9 +45,9 @@ var sliceLength = require( '@stdlib/slice-base-length' );
 * // returns [ 3, 10, 1 ]
 *
 * @example
-* var Slice = require( '@stdlib/slice-ctor' );
-* var MultiSlice = require( '@stdlib/slice-multi' );
-* var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
+* var Slice = require( `@stdlib/slice/ctor` );
+* var MultiSlice = require( `@stdlib/slice/multi` );
+* var normalizeMultiSlice = require( `@stdlib/slice/base/normalize-multi-slice` );
 *
 * var s = new MultiSlice( null, new Slice( -1, 3, -2 ) );
 *
@@ -64,9 +61,9 @@ var sliceLength = require( '@stdlib/slice-base-length' );
 * // returns [ 5, 6 ]
 *
 * @example
-* var Slice = require( '@stdlib/slice-ctor' );
-* var MultiSlice = require( '@stdlib/slice-multi' );
-* var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
+* var Slice = require( `@stdlib/slice/ctor` );
+* var MultiSlice = require( `@stdlib/slice/multi` );
+* var normalizeMultiSlice = require( `@stdlib/slice/base/normalize-multi-slice` );
 *
 * var s = new MultiSlice( 1, new Slice( 0, 0, 1 ) );
 *
@@ -79,20 +76,9 @@ var sliceLength = require( '@stdlib/slice-base-length' );
 * v = sliceShape( normalizeMultiSlice( s, [ 5, 15 ], false ) );
 * // returns [ 1, 0 ]
 */
-function sliceShape( slice ) {
-	var data;
-	var out;
-	var i;
-
-	data = slice.data;
-	out = [];
-	for ( i = 0; i < data.length; i++ ) {
-		out.push( sliceLength( data[ i ] ) );
-	}
-	return out;
-}
+declare function sliceShape( slice: MultiSlice ): Array<number>;
 
 
 // EXPORTS //
 
-module.exports = sliceShape;
+export = sliceShape;
