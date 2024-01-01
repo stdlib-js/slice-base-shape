@@ -22,7 +22,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isNonNegativeIntegerArray = require( '@stdlib/assert-is-nonnegative-integer-array' ).primitives;
 var S = require( '@stdlib/slice-ctor' );
 var MultiSlice = require( '@stdlib/slice-multi' );
