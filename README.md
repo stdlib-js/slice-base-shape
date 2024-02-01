@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/slice-base-shape
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@deno/mod.js';
+var sliceShape = require( '@stdlib/slice-base-shape' );
 ```
 
 <a name="main"></a>
@@ -64,9 +82,9 @@ Returns the shape of a [normalized multi-slice][@stdlib/slice/base/normalize-mul
 <!-- eslint-disable new-cap -->
 
 ```javascript
-import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
+var S = require( '@stdlib/slice-ctor' );
+var MultiSlice = require( '@stdlib/slice-multi' );
+var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
 
 var s = new MultiSlice( S( -4, null, -1 ), S( 2, 10, 1 ) );
 // returns <MultiSlice>
@@ -101,10 +119,10 @@ var sh = sliceShape( s );
 <!-- eslint-disable new-cap -->
 
 ```javascript
-import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
-import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@deno/mod.js';
+var S = require( '@stdlib/slice-ctor' );
+var MultiSlice = require( '@stdlib/slice-multi' );
+var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
+var sliceShape = require( '@stdlib/slice-base-shape' );
 
 var s1 = new MultiSlice( S( 3, null, -1 ), S( 3, 7, 1 ) );
 var s2 = normalizeMultiSlice( s1, [ 10, 10 ], false );
@@ -171,7 +189,7 @@ console.log( '[ %s ]', sh.join( ', ' ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -225,13 +243,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/slice-base-shape/tree/deno
+[deno-readme]: https://github.com/stdlib-js/slice-base-shape/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/slice-base-shape/tree/umd
+[umd-readme]: https://github.com/stdlib-js/slice-base-shape/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/slice-base-shape/tree/esm
+[esm-readme]: https://github.com/stdlib-js/slice-base-shape/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/slice-base-shape/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-shape/main/LICENSE
 
-[@stdlib/slice/base/normalize-multi-slice]: https://github.com/stdlib-js/slice-base-normalize-multi-slice/tree/deno
+[@stdlib/slice/base/normalize-multi-slice]: https://github.com/stdlib-js/slice-base-normalize-multi-slice
 
 </section>
 
