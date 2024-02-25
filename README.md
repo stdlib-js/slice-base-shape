@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-shape/tags). For example,
+
+```javascript
 import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.1-deno/mod.js';
 ```
 
@@ -104,7 +109,7 @@ var sh = sliceShape( s );
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
 import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
-import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.1-deno/mod.js';
+import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@deno/mod.js';
 
 var s1 = new MultiSlice( S( 3, null, -1 ), S( 3, 7, 1 ) );
 var s2 = normalizeMultiSlice( s1, [ 10, 10 ], false );
