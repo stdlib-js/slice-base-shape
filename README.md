@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@esm/index.mjs';
+import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.2-esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -109,7 +109,7 @@ var sh = sliceShape( s );
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
 import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@esm/index.mjs';
-import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@esm/index.mjs';
+import sliceShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.2-esm/index.mjs';
 
 var s1 = new MultiSlice( S( 3, null, -1 ), S( 3, 7, 1 ) );
 var s2 = normalizeMultiSlice( s1, [ 10, 10 ], false );
