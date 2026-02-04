@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-shape",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Compute the shape of a normalized multi-slice.",
   "license": "Apache-2.0",
   "author": {
@@ -37,12 +37,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/slice-base-length": "^0.2.2",
+    "@stdlib/slice-base-length": "^0.2.3",
     "@stdlib/types": "^0.4.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-nonnegative-integer-array": "^0.2.2",
-    "@stdlib/slice-base-normalize-multi-slice": "^0.2.2",
+    "@stdlib/slice-base-normalize-multi-slice": "^0.2.3",
     "@stdlib/slice-ctor": "^0.2.2",
     "@stdlib/slice-multi": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
