@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-sliceShape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@umd/browser.js' )
+sliceShape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.3-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var sliceShape = require( 'path/to/vendor/umd/slice-base-shape/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.3-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -131,7 +131,7 @@ var sh = sliceShape( s );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-shape@v0.2.3-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
