@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,20 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var sliceLength = require( '@stdlib/slice-base-length' );
-
-
-// MAIN //
+import { MultiSlice } from '@stdlib/types/slice';
 
 /**
 * Returns the shape of a normalized multi-slice.
 *
-* @param {MultiSlice} slice - normalized MultiSlice object
-* @returns {NonNegativeIntegerArray} slice shape
+* @param slice - input multi-slice
+* @returns slice shape
 *
 * @example
 * var Slice = require( '@stdlib/slice-ctor' );
@@ -79,20 +76,9 @@ var sliceLength = require( '@stdlib/slice-base-length' );
 * v = sliceShape( normalizeMultiSlice( s, [ 5, 15 ], false ) );
 * // returns [ 1, 0 ]
 */
-function sliceShape( slice ) {
-	var data;
-	var out;
-	var i;
-
-	data = slice.data;
-	out = [];
-	for ( i = 0; i < data.length; i++ ) {
-		out.push( sliceLength( data[ i ] ) );
-	}
-	return out;
-}
+declare function sliceShape( slice: MultiSlice ): Array<number>;
 
 
 // EXPORTS //
 
-module.exports = sliceShape;
+export = sliceShape;
